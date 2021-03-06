@@ -1,0 +1,124 @@
+:root {
+    --color-primary: #08A6E4;
+    --color-red: #FB3B64;
+    --color-green: #55DFB4;
+    --color-black: #000000;
+    --color-white: #ffffff;
+    --color-grey: #A5A5A5;
+    --color-light-grey: #F7F7F7;
+    --color-primary-shadow: rgba(7, 172, 230, .16);
+    --button-radius: 35px;
+    --font-raleway: "Raleway", sans-serif;
+    --font-open-sans: "Open Sans", sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--font-open-sans);
+}
+
+a {
+    text-decoration: none;
+}
+
+.container {
+    width: 1626px;
+    margin: 0 auto;
+}
+
+/* Header */
+.header {
+    height: 70px;
+    box-shadow: 0 3px 6px #00000029;
+}
+
+.header_container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+}
+
+.nav_header {
+    display: flex;
+}
+
+.nav_element {
+    padding: 26px;
+}
+
+.nav_element:last-child {
+    padding-right: 136px;
+}
+
+.nav_link {
+    color: var(--color-grey);
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 11px;
+    padding: 28px 18px 27px 22px;
+    letter-spacing: 3.28px;
+    border-bottom: 4px solid transparent;
+}
+
+.nav_link:hover {
+    color: var(--color-black);
+    border-color: var(--color-primary);
+}
+
+.LogoBestShop {
+    font-family: var(--font-raleway);
+    font-size: 2rem;
+    font-weight: 300;
+    color: var(--color-primary);
+    padding-left: 136px;
+}
+
+/* main */
+.opening {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.opening_content {
+    margin-top: 130px;
+    text-align: center;
+}
+
+.opening_header {
+    font-family: var(--font-raleway);
+    font-size: 49px;
+}
+
+.opening_heading {
+    margin-top: 20px;
+    margin-bottom: 38px;
+}
+
+.opening_image {
+    width: 100%;
+    height: auto;
+}
+
+.btn {
+    color: white;
+    font-weight: bold;
+    display: inline-block;
+    padding: 16px 65px;
+    border-radius: var(--button-radius);
+    border: none;
+}
+
+.btn--primary {
+    background-color: var(--color-primary);
+    border-radius: 40px;
+    box-shadow: 3px 10px 14px var(--color-primary-shadow);
+}
+
+.btn--large {
+    padding: 22px 155px;
+}
